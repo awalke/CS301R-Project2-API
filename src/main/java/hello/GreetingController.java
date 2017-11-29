@@ -4,6 +4,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicLong;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,6 +22,7 @@ public class GreetingController {
                             String.format(template, name));
     }
 
+    @CrossOrigin
     @RequestMapping("/netflix")
     public List<String> netflix(@RequestParam(value = "searchString", defaultValue = "") String searchString) throws IOException {
         List<String> titles = new ArrayList<>();

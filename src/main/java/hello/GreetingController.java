@@ -39,4 +39,22 @@ public class GreetingController {
 
         return titles;
     }
+
+    @CrossOrigin
+    @RequestMapping("/hulu")
+    public List<String> hulu(@RequestParam(value = "searchString", defaultValue = "") String searchString) throws IOException {
+        List<String> titles = new ArrayList<>();
+        File file = new File("hulu-titles.txt");
+
+        try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                if (line.toLowerCase().contains(searchString.toLowerCase())) {
+                    titles.add(line);
+                }
+            }
+        }
+
+        return titles;
+    }
 }

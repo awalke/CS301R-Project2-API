@@ -75,7 +75,7 @@ Keeping Up With the Kardashians
 
 Family Matters
 
-Marvel's Runaways
+  Runaways
 
 Mom
 
@@ -143,7 +143,7 @@ Catfish: The TV Show
 
 Key & Peele
 
-Marvel's Agents of S.H.I.E.L.D.
+  Agents of S.H.I.E.L.D.
 
 Gravity Falls
 
@@ -481,7 +481,7 @@ Scandal
 
 The Strain
 
-Marvel's Inhumans
+  Inhumans
 
 Good Morning America
 
@@ -557,7 +557,7 @@ Dexter's Laboratory
 
 Sons of Anarchy
 
-Marvel's Agent Carter
+  Agent Carter
 
 Star Trek: The Next Generation
 
